@@ -1,34 +1,24 @@
-var rad = 60; // Width of the shape
-var xpos, ypos; // Starting position of shape
-
-var xspeed = 2.8; // Speed of the shape
-var yspeed = 2.2; // Speed of the shape
-
-var xdirection = 1; // Left or Right
-var ydirection = 1; // Top to Bottom
+// declare variables here
+let ellipsePosition=1;
 
 function setup() {
-  createCanvas(720, 400);
-  noStroke();
-  frameRate(30);
-  ellipseMode(RADIUS);
-  // Set the starting position of the shape
-  xpos = width / 5;
-  ypos = height / 2;
+  // put setup code here --> this runs once upon launch
+
+
+  createCanvas(500, 500);
+// set background color in grayscale:
+
+  background(150, 0, 150);
+}
+// draw ellipse}
+function draw() {
+  background(150, 0, 150);
+  ellipse(ellipsePosition, 50, 80, 80);
+  ellipsePosition+=1;
+
+
+  // put drawing code here --> this loops every frame
 }
 
-function draw() {
-  background(102);
 
-  // Update the position of the shape
-  xpos = xpos + xspeed * xdirection;
-  ypos = ypos + yspeed * ydirection;
-
-  // Test to see if the shape exceeds the boundaries of the screen
-  // If it does, reverse its direction by multiplying by -1
-  if (xpos > width - rad || xpos < rad) {
-    xdirection *= -1;
-  }
-  if (ypos > height - rad || ypos < rad) {
-    ydirection *= -1;
-  }
+// write custom functions here
