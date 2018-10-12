@@ -7,7 +7,8 @@ function setup() {
 
   createCanvas(500, 500);
 // set background color in grayscale:
-  background(150);
+
+  background(150, 0, 150);
 }
 // draw ellipse
 ellipse(50, 50, 80, 80);
