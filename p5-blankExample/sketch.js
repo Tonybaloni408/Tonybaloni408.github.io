@@ -9,7 +9,7 @@ function setup() {
 // set background color in grayscale:
 
   background(150, 0, 150);
-  
+}
 // draw ellipse
 ellipse(50, 50, 80, 80);
 function draw() {
