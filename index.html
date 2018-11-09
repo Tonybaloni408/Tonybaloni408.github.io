@@ -43,5 +43,17 @@
     context.closePath();
     context.fill();
 
+function drawRect(x, y, w, h, color) {
+   ctx.fillstyle = color;
+   ctx.fillRect(x, y, w, h,);
+}
+   function drawCircle(x, y, r, color){
+
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.arc(x, y, r, 0, Math.PI*2, false);
+    ctx.closePath();
+    ctx.fill();
+}
   </body>
 </html>
