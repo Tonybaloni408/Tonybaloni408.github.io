@@ -14,4 +14,34 @@
 
   </script>
 
+
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en"
+  <head>
+    <meta charset="utf-8">
+    <title>Ponf Mania javascript </title>
+  </head>
+  <body>
+    <canvas id="pong" width="600" height="400"></canvas>
+    <script src="pong.js"></script
+
+  const canvas = document.getElementById('pong');
+  const context = canvas.getcontext("2d");
+
+
+    context.fillstyle = "black";
+    context.fillRect( 100, 200, 50, 75);
+
+    context.fillstyle ="red";
+    context.beginPath();
+    context.arc( 300, 350, 100, 0, Math.PI*2,false);
+
+    context.closePath();
+    context.fill();
+
+  </body>
 </html>
