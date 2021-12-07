@@ -1,69 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>(Pong Game Javascript)</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-  </head>
-  <body>
-    <h1>Hello World -- This is my website!</h1>
-    <p>I'm making this to host my portfolio for free.</p>
-      <center><video src="Digital media.mp4" width="1000" height="800" autoplay controls ></video></center>
-       <p> This is a project that challenged me to think outside the box. It consists of modern technology in film making and classic methods on how movies were made back then. The video on the left portrays a person of no experience editing a video with ease and slight learning curve and on the opposing side is a whole crew which is cutting taping and finalizing the film which could take weeks. </p>
-      
- <center><img src="pic3.JPG" width="900" height="550"><img src="pic4.JPG" width="900" height="550"></center>
-      <p>
-For the second project I made a zoetrope and talked about why I made it. I made it because it represents my passion for making animation and the struggles that come with it and why my plan didn't work out as planned to major in my preferred major. It illustrates one of my favorite character which inspired me to become an artist and where the journey started. 
-</p>
+<html>
+<head>
+<title>Portfolio</title>
 
-      <center><img src="pic1.JPG" width="900" height="550"><img src="pic2.JPG" width="900" height="550"></center>
-      <p>The reason for my piece being a performance was because I wanted the viewers to be more immersed in my project and wanted them to feel what I was and still am feeling. The feeling of being lost in society and living in a world in which people who major in art are being belittled by society and being told that we won't have a future because no one is going to hire us. Getting a job as an artist/art major is difficult which is where the term starving artist came to be. My project is a scale model of my home because that is where everything has occurred. Me becoming an artist started in the fifth grade and then died down in the 6th grade. 2 years later I had a friend who inspired me to draw again, looking back it was more like she saw my previous drawings and knew I could become something more. As more time went on, I kept drawing until my 1st semester in college because everything was becoming difficult to manage all at once. And in those years of drawing I have had my fair share of criticism and people doubting me on what I wanted to major in just because it didn't I love real life skills that Id need in the the real world to succeed. I was also really vulnerable to people's criticism at the time as well and made me change my mind drastically about what to major in. So the reason for making this project was a message for other to believe that they can do what they want and screw what people say, you have potential to prove everyone wrong</p>
-  </body>
-  <canvas id="canvas" width="600" height="400"></canvas>
-  <script src="pong.js"="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-  </script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+ <ul class="navbar-nav">
+ 	<li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+	<li class="nav-item"><a class="nav-link" href="glitch.html">glitch</a></li>
+	<li class="nav-item"><a class="nav-link" href="meme.html">meme</a></li>
+    <li class="nav-item"><a class="nav-link" href="minecraft.html">minecraft</a>      </li>
+	 <li class="nav-item"><a class="nav-link" href="3d-print.html">3d-print</a></li>
+    <li class="nav-item"><a class="nav-link" href="netart.html">net-art</a></li>
+    <li class="nav-item"><a class="nav-link" href="selfie.html">code art</a></li>
+	<li class="nav-item"><a class="nav-link" href="p5js.html">diyps</a></li>
+	<li class="nav-item"><a class="nav-link" href="game.html">Wack-a-mole</a></li>
+	
+</ul> 
+</nav>
+<div class="jumbotron">
+  <h1 class="text-center">This is my Portfolio</h1>
+  <p></p>
+</div>
+<div class="container-fluid">
+</div>
+<h1 class="text-center" >Feel free to look around my stuff</h1>
 
+<img src="side.jpg" class="mx-auto d-block rounded-circle img-fluid" alt="Bamboo">
+
+</body>
 </html>
 
-
-<!DOCTYPE html>
-<html lang="en"
-  <head>
-    <meta charset="utf-8">
-    <title>Ponf Mania javascript </title>
-  </head>
-  <body>
-    <canvas id="pong" width="600" height="400"></canvas>
-    <script src="pong.js"></script
-
-  const canvas = document.getElementById('pong');
-  const context = canvas.getcontext("2d");
-
-
-    context.fillstyle = "black";
-    context.fillRect( 100, 200, 50, 75);
-
-    context.fillstyle ="red";
-    context.beginPath();
-    context.arc( 300, 350, 100, 0, Math.PI*2,false);
-
-    context.closePath();
-    context.fill();
-
-function drawRect(x, y, w, h, color) {
-   ctx.fillstyle = color;
-   ctx.fillRect(100, 100, 100, 100, "red");
-}
-   function drawCircle(x, y, r, color){
-
-    ctx.fillStyle = color;
-    ctx.beginPath();
-    ctx.arc(x, y, r, 0, Math.PI*2, false);
-    ctx.closePath();
-    ctx.fill();
-}
-  </body>
-</html>
